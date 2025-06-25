@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Investor-Entrepreneur Bridge</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Bridge Between Investor and Business People</h1>
+
+    <!-- Register Form -->
+    <div id="register-section">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="email" id="regEmail" placeholder="Email" required>
+        <input type="password" id="regPassword" placeholder="Password" required>
+        <select id="regRole">
+          <option value="User">User</option>
+          <option value="Business People">Business People</option>
+          <option value="Investor">Investor</option>
+          <option value="Banker">Banker</option>
+          <option value="Business Advisor">Business Advisor</option>
+        </select>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <!-- Login Form -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="logEmail" placeholder="Email" required>
+        <input type="password" id="logPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard-section" style="display: none;">
+      <h2>Welcome to Dashboard</h2>
+      <p id="roleOutput"></p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+ <script type="module" src="app.js"></script>
+
+</body>
+</html>
